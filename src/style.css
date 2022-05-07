@@ -1,0 +1,122 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3%;
+  width: 100%;
+  height: 1000px;
+}
+
+.text-block .keyboard {
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[18];
+      grid-template-columns: repeat(18, 1fr);
+  grid-gap: 5px;
+  width: 100%;
+  height: calc(400%/10);
+  margin-top: 3%;
+  background-color: #f8f6f8;
+}
+
+.text-block button {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.text-block .key {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.text-block .key:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+.textarea {
+  background-color: #f8f6f8;
+  border: none;
+  width: 100%;
+  height: calc(200%/10);
+  outline: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 36px;
+  resize: none;
+  overflow: auto;
+}
+
+#CapsLock, #Tab, #ShiftLeft {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#Enter {
+  -ms-grid-column: 14;
+      grid-column-start: 14;
+  grid-column-end: 16;
+}
+
+#ShiftRight {
+  -ms-grid-column: 13;
+      grid-column-start: 13;
+  grid-column-end: 16;
+}
+
+#Backspace {
+  -ms-grid-column: 14;
+      grid-column-start: 14;
+  grid-column-end: 16;
+}
+
+#Space {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 14;
+}
+
+#ControlLeft {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#ArrowUp {
+  -ms-grid-column: 17;
+      grid-column-start: 17;
+  grid-column-end: 18;
+}
+
+.active {
+  background-color: gray !important;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

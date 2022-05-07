@@ -1,0 +1,96 @@
+$greycolor: #f8f6f8;
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 100%;
+  height: 1000px;
+  .keyboard {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    height: calc(400%/10);
+    margin-top: 3%;
+    background-color: $greycolor;
+  }
+  button {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .key {
+    border: none;
+    background-color:  white;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .key:hover {
+    background-color: gray;
+    color: #fff;
+  }
+}
+.textarea {
+  background-color:  $greycolor;
+  border: none;
+  width: 100%;
+  height: calc(200%/10);
+  outline: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 36px;
+  resize: none;
+  overflow: auto;
+}
+#CapsLock, #Tab, #ShiftLeft {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+#Enter {
+  grid-column-start: 14;
+  grid-column-end: 16;
+}
+#ShiftRight {
+  grid-column-start: 13;
+  grid-column-end: 16;
+}
+#Backspace {
+  grid-column-start: 14;
+  grid-column-end: 16;
+}
+
+#Space {
+  grid-column-start: 4;
+  grid-column-end: 14;
+}
+#ControlLeft {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#ArrowUp {
+  grid-column-start: 17;
+  grid-column-end: 18;
+}
+
+.active {
+  background-color: gray !important;
+  color: #fff;
+}
