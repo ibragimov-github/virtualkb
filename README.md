@@ -1,3 +1,3 @@
 # virtualkb
 
-Deploy: https://ibragimov-github.github.io/virtualkb/dist/
+Deploy: https://md-ibragimov.github.io/virtualkb/dist/
